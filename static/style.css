@@ -1,0 +1,161 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #f0fdf4, #e6f7ff);
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  color: #002b2b;
+}
+
+.container {
+  width: 420px;
+  background-color: #fff;
+  padding: 25px 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  border-top: 6px solid #020259;
+  border-bottom: 8px solid #ff3838;
+  transition: all 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+th {
+  color: #02a543;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 14px;
+  border-bottom: 2px solid #02a543;
+  text-transform: uppercase;
+  background: #f7fff9;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 14px;
+  background-color: #f9fdfb;
+  border-bottom: 1px solid #dcdcdc;
+  transition: background-color 0.25s ease, border-color 0.25s ease;
+}
+
+tr:hover td {
+  background-color: #eaffea;
+  border-bottom: 2px solid #02a543;
+}
+
+.delete-btn {
+  color: #ff1e1e;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.2s ease;
+}
+
+.delete-btn::before {
+  content: "";
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin-right: 8px;
+  background: url("https://cdn-icons-png.flaticon.com/512/6861/6861362.png")
+    no-repeat center / contain;
+}
+
+.delete-btn:hover {
+  color: #cc0000;
+  transform: scale(1.05);
+}
+
+.update-btn {
+  color: #00c853;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.2s ease;
+}
+
+.update-btn::before {
+  content: "";
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin-right: 8px;
+  background: url("https://img.icons8.com/fluency-systems-regular/96/40C057/edit.png")
+    no-repeat center / contain;
+}
+
+.update-btn:hover {
+  color: #05e263;
+  transform: scale(1.05);
+}
+
+/* 🔗 ===== Links ===== */
+a {
+  text-decoration: none;
+  font-size: 15px;
+  color: #017c32;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #015523;
+  text-decoration: underline;
+}
+
+/* 📝 ===== Form Styling ===== */
+form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+form input[type="text"] {
+  padding: 10px 12px;
+  border: 1px solid #017c32;
+  color: #002b2b;
+  border-radius: 7px;
+  width: 60%;
+  font-size: 14px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form input[type="text"]:focus {
+  outline: none;
+  border-color: #02a543;
+  box-shadow: 0 0 5px rgba(2, 165, 67, 0.4);
+}
+
+form input[type="submit"] {
+  width: 35%;
+  padding: 10px;
+  background-color: #017c32;
+  box-shadow: 0 4px 8px rgba(1, 124, 50, 0.3);
+  border: none;
+  border-radius: 7px;
+  color: white;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #016b2d;
+  box-shadow: 0 6px 10px rgba(1, 108, 44, 0.4);
+  transform: translateY(-2px);
+}

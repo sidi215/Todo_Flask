@@ -1,0 +1,15 @@
+{% block head %}
+<title>Flask!</title>
+<link rel="stylesheet" href="{{url_for('static', filename='updatestyle.css')}}">
+{% endblock %}
+
+
+{% block body %}
+    <div class="container">
+        <form action="/update/{{task.id}}" method="POST">
+            <h1 style="text-align: center;">Update your todo!</h1>
+            <input type="text" name="content" id="content" value="{{task.content}}">
+            <input type="submit" name="Add" value="Update" id="btn-task">
+        </form>
+    </div>
+{% endblock %}
